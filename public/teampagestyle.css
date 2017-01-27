@@ -9,13 +9,16 @@ h1 {
 	line-height: 26.4px;
 	margin: 0px;
 	color:white;
+	text-align: center;
 	
 }
+
 h3{
 	font-family: Arvo;
 	font-style: bold;
 	font-variant: normal;
 	color:white;
+	text-align: center;
 	
   }
   
@@ -27,6 +30,7 @@ p {
 	font-weight: 400;
 	line-height: 20px;
 	color: white;
+	text-align: center;
 	
 }
 html, body {
