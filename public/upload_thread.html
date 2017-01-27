@@ -1,10 +1,49 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title> UPLOAD THREAD, SCREEN 6 </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Josh Chang">        
     </head>
 
     <body>
-        <h1> MARVEL-DEX </h1>
+    	<section>
+        <h1><a href="home.html">MARVEL-DEX</a></h1>
+    	<!--General Top Navigation Bar-->
+	        <form action="login.html">
+	        	<input type="submit" value="Logout" />
+	    	</form>
+
+	        <form action="home.html">
+	        	<input type="search" placeholder="Search Marvel-Dex" />
+	    	</form>
+
+	        <form action="user_profile.html">
+	        	<input type="submit" value="My Profile" />
+	    	</form>
+    	</section>
+
+    	<!--Submission form-->
+    	<section>
+    		<h2>Submit Post</h2>
+    		<form action="character_home.html">
+    			<label>Post Name: </label><input type="text" placeholder="Title required "/>
+    			<label>Image Upload: </label><input type="file"/>
+    			<label>Video URL: </label><input type="url" placeholder="Link"/>
+    			<label>Text: </label><input size=100 type="text" placeholder="Text..."/>
+    			<label>My Rating (1-5): </label><input type="number" name="Rating" min="1" max="5"/>
+    			<label>Movie Tag: </label><input list="movies">
+    				<datalist id="movies">
+    					<option value="The Avengers">
+    					<option value="Iron Man">
+    					<option value="Captain America: Civil War">
+    				</datalist>
+    			<label>Privacy: </label>
+    			<input type="radio" name="privacy" value="Public" checked> Public
+    			<input type="radio" name="privacy" value="Private"> Private<br>
+    			<input type="submit" value="Submit post"/>
+    		</form>
+    	</section>
 
     </body>
 </html>
