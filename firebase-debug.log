@@ -1,14 +1,14 @@
 [debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\admjosh\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Joshua\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
 [debug] CLI Version:  3.2.1
 [debug] Platform:     win32
-[debug] Node Version: v6.9.4
-[debug] Time:         Thu Jan 26 2017 16:22:02 GMT-0800 (Pacific Standard Time)
+[debug] Node Version: v4.2.2
+[debug] Time:         Fri Jan 27 2017 09:11:12 GMT-0800 (Pacific Standard Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [info] Starting Firebase development server...
 [info] 
-[info] Project Directory: C:\Users\admjosh\OneDrive\Senior College\Winter\134B\MarvelDex
+[info] Project Directory: C:\Users\Joshua\OneDrive\Senior College\Winter\134B\MarvelDex
 [info] Public Directory: public
 [info] 
 [info] Server listening at: http://localhost:5000
