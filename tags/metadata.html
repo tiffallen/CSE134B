@@ -1,6 +1,18 @@
+<!DOCTYPE html>
+
+
 <html>
     <head>
         <title> METADATA </title>
+        <meta charset="utf-8"/>
+        <base href="http://classes.pint.com/cse134b/">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        
+         <style>
+            #temp {
+                color: red;
+            }
+        </style>
     </head>
 
     <body>
@@ -8,5 +20,43 @@
         <p> Metadata is content that sets up the presentation or behavior of the rest of the content, or that 
         sets up the relationship of the document with other documents, or conveys other "out of band" information </p>
         <p> Tags to be demonstrated: base, link, meta, noscript, script, style, template, title </p>
+        
+        <h3> base  </h3>
+            <p> The base code is located in the header of the html document </p>
+        
+        <h3> link </h3>
+            <p> the link code is in the header. I "linked" a css file (though there is not one for this hw) </p>
+        
+        <h3> meta </h3>
+            <p> Meta is located in the header of the html document </p>
+        
+        <h3> noscript </h3>
+            <script>
+                document.write("Hello World!")
+            </script>
+            <noscript>OH NO!!! Your browser does not support JavaScript!</noscript>
+        
+        <h3> script </h3>
+            <script>
+                document.write("Hello World!")
+            </script>
+            <noscript>OH NO!!! Your browser does not support JavaScript!</noscript>
+        
+        <h3> style  </h3>
+            <p id="temp"> STYLE  </p>
+        
+        <h3> template </h3>
+            <template id="myRows">
+                <tr>
+                    <td class="myRecord"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </template>
+            <p> Template does not display anything until used in other parts of code. </p>
+        
+        <h3> title </h3>
+            <p> The title is located in the header of the html document </p>
+        
     </body>
 </html>

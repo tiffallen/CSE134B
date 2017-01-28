@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+
+
+<html lang = "en">
     <head>
         <title> FLOW </title>
+        <meta charset="utf-8"/>
     </head>
 
     <body>
@@ -9,7 +13,7 @@
         blockquote br button canvas cite code data datalist del dfn div dl em embed fieldset figure footer form 
         h1 h2 h3 h4 h5 h6 header hr i iframe img input ins kbd keygen label main map mark math meter nav noscript 
         object ol output otpgroup p pre progress q ruby s samp script section select small span strong sub sup svg table template
-        textarea time u ul var video wbr text </p>
+        textarea time u ul var video wbr </p>
         
         <h3> a</h3>
             <a href="http://classes.pint.com/cse134b/">CSE 134B course website </a>
@@ -195,11 +199,11 @@
         
         <h3> iframe </h3>
             <iframe src="http://www.ucsd.edu">
-              <p>Your browser does not support iframes.</p>
             </iframe>
         
         <h3> img </h3>
              <img src="embed.jpg" alt="pug" height="42" width="42">
+             
         
         <h3> input </h3>
             <form>
@@ -215,17 +219,13 @@
             <kbd> Keyboard Input </kbd>
         
         <h3> keygen</h3>
-            <form>
-                Phrase to encrypt: <input type="text" name="phrase">
-                Encryption Security level: <keygen name="security">
-                <input type="submit">
-            </form>
+            <p> The validator outputed that the keygen attribute is obsolete </p>
         
         <h3> label </h3>
             <form >
-              <label for="male">Dog </label>
+              <label>Dog </label>
               <input type="radio"><br>
-              <label for="female">Cat</label>
+              <label>Cat</label>
               <input type="radio"><br>
             </form>
         
@@ -246,23 +246,51 @@
         
         <h3> math </h3>
             <math>
-                H(s) = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup> h(t) dt
-            </math>
+                <mi> x </mi>
+             </math>
+            
         
         <h3> meter </h3>
             <meter value="2" min="0" max="4"></meter><br>
             <meter value="0.90"></meter>
         
         <h3> nav </h3>
+            <nav>
+                <a href = "heading.html"> Heading </a>
+                <a href = "ineractive.html">Interactive </a>
+                <a href = "metadata.html"> Metadata </a>
+                <a href = "phrasing.html"> Phrasing </a>
+                <a href = "sectioning.html"> Sectioning </a>
+                <a href = "embedded.html"> Embedded </a>
+            </nav>
         
         <h3> noscript</h3>
+            <script>
+                document.write("Hello World!")
+            </script>
+            <noscript>OH NO!!! Your browser does not support JavaScript!</noscript>
         
         <h3> object  </h3>
             <object width="400" height="400" data="embed.jpg"></object>
         
         <h3> ol  </h3>
+            <ol>
+                <li> ONE </li>
+                <li> TWO </li>
+                <li> THREE </li>
+            </ol>
+            <ol start = "10">
+                <li> TEN </li>
+                <li> ELEVEN </li>
+                <li> TWELVE </li>
+            </ol>
         
         <h3> output</h3>
+            <form onsubmit="return false" oninput="output.value = parseInt(a.value) + parseInt(b.value)">
+              <input name="a" type="number" step="any"> +
+              <input name="b" type="number" step="any"> =
+              <output name="output"></output>
+            </form>
         
         <h3> Optgroup </h3>
             <select>
@@ -277,22 +305,51 @@
             </select>
   
         <h3> p</h3>
+            <p> THIS IS A PARAGRAPH </p>
         
         <h3> pre</h3>
+            <pre>
+            This    
+                    IS
+                            Weirdly
+                                    Formatted
+            </pre>
         
         <h3> progress </h3>
+            <progress value="66" max="100"></progress>
         
         <h3> q </h3>
+            <p> Unicef's goal is to <q> address the needs of children in the developing world.</q> </p>
         
         <h3> ruby </h3>
+            <ruby>
+               <rb>旧</rb>
+               <rb>金</rb>
+               <rb>山</rb>
+               <rt>jiù</rt>
+               <rt>jīn</rt>
+               <rt>shān</rt>
+               <rtc>San Francisco</rtc>
+            </ruby>
+            <p> Note: I took this ruby code from an online example because I did not know how to make asian characters </p>
         
         <h3> s</h3>
+            <s> My dog is three years old </s>
+            <p> My dog is four years old </p>
         
         <h3> samp </h3>
-        
+            <samp> This is output from a computer program </samp>
+            
         <h3> script </h3>
+            <script>
+                document.write("Hello World!")
+            </script>
         
         <h3> section </h3>
+            <section>
+                <h4> Unicef </h4>
+                <p> Explanation of what Unicef is and what it stands for </p>
+            </section>
         
         <h3> select </h3>
             <h3> Select/Option </h3>
@@ -304,20 +361,56 @@
             </select>
         
         <h3> small </h3>
+            <p> Name of a Book </p>
+            <p> <small> Written in 1980 </small> </p>
         
         <h3> span </h3>
+            <p>The house I grew up in was  <span style="color:blue">blue</span> </p>
         
         <h3> strong </h3>
+            <p> I am <strong> strong </strong></p>
         
         <h3> sub </h3>
+            <p> This is <sub> subscript </sub></p>
         
         <h3> sup </h3>
+            <p> This is  <sup> superscript </sup></p>
         
         <h3> svg </h3>
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
         
         <h3> table </h3>
+            <table>
+                <caption> This is my table </caption>
+                <colgroup>
+                <col span="1" style="background-color:red">
+                <col style="background-color:yellow">
+              </colgroup>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </tr>
+                <tr>
+                    <td>value 1</td>
+                    <td>value 2</td>
+                </tr>
+                <tr>
+                    <td> value 3 </td>
+                    <td> value 4 </td>
+                </tr>
+            </table>
         
         <h3> template  </h3>
+            <template id="myRows">
+                <tr>
+                    <td class="myRecord"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </template>
+            <p> Template does not display anything until used in other parts of code. </p>
         
         <h3> textarea </h3>
             <textarea rows="4" cols="50">
@@ -325,19 +418,76 @@
             </textarea>
         
         <h3> time </h3>
+            <p> The Coffee Bean and Tea Leaf opens at <time>10:00</time> every weekday morning </p>
         
         <h3> u </h3>
+            <p> This is <u>msispelled</u></p>
         
         <h3> ul </h3>
-        
+            <p> This is an unordered list </p>
+            <ul>  
+                <li> ONE </li>
+                <li> TWO </li>
+                <li> THREE <li>
+             </ul>
+                
         <h3> var </h3>
+            <p> This is a <var> variable </var></p>
         
         <h3> video </h3>
+            <video width="320" height="240" controls>
+              <source src="video.mp4" type="video/mp4">
+              <track kind=subtitles label="English" src="http://ucsd.edu">
+              Your browser does not support the video tag.
+            </video>
         
         <h3> wbr </h3>
+            <p> BLAH BLAH BLAH BLAH BLAH BLAH <wbr> WORD BREAK OPPORTUNITY BLAH BLAH BLAH BLAH  </p>
+            
+            
+        <h2> RANDOM OTHER ONES </h2>
         
-        <h3> text  </h3>
-
+        <h3> figure  </h3>
+            <figure>
+              <img src="embed.jpg" alt="The Pug" width="304" height="228">
+              <figcaption> This is a pug </figcaption>
+            </figure>
+        
+        <h3> marquee </h3>
+           <!-- <marquee> RIGHT TO LEFT </marquee> -->
+           <p> The marquee tag has been made obsolete in HTML5</p>
+        
+        <h3> param </h3>
+            <object data="audio.mp3">
+              <param name="autoplay" value="true">
+            </object>
+ 
+        <h3> tbody tfoot thead  </h3>
+        <table>
+          <thead>
+          <tr>
+             <th>HEAD  1 </th>
+             <th>HEAD  2</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+             <td>BODY 1</td>
+             <td>BODY 2</td>
+          </tr>
+          <tr>
+              <td>BODY 3</td>
+              <td>BODY 4</td>
+          </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+              <td>FOOT 1</td>
+              <td>FOOT 2</td>
+          </tr>
+          </tfoot>
+          
+        </table>
         
         
     </body>
