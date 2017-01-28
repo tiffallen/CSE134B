@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--scripting tags -->
+<h1> Script tag </h1>
+<script>
+var i = 4;
+if(i < 10){
+	document.write("This is printing because of javascript ");
+	}
+</script> 
+
+
+<!--no script -->
+<h1> No Script tag </h1>
+<script>
+	document.write("Hello World");
+	
+</script> 
+
+<noscript> "Sorry, your browser does not support javascript" </noscript>
+<p> If the browser didn't support javascript, text inside noscript tag would appear </p>
+
+</body>
+</html>
+
+<!--template tag used to copy html sections in javascript -->
+<h1> Template tag</h1>
+<template id="temp">
+<h2></h2>
+<p></p>
+<hr>
+</template>
+<script>
+	var arr= [{name:'Momo', country:'USA'},
+			  {name:'Josh', country: 'France'},
+			  {name: 'Tiffany', country: 'Germany'}];
+    var tmp = document.querySelector('#temp');
+    for(var i = 0; i < arr.length; i++){
+	    var user = arr[i];
+	    var copy = tmp.content.cloneNode(true);
+	    var h2 = copy.querySelectorAll('h2');
+	    h2[0].innerHTML=user.name;
+	    tmp.parentNode.appendChild(copy);
+    }
+	
+</script> 
+
+<!--canvas element -->
+<h1> Canvas Tag </h1>
+<canvas id="can" width="300" height="200" style="border:1px solid #000000;">
+</canvas>
+<script>
+	var a = document.getElementById("can");
+	var con = a.getContext("2d");
+	con.moveTo(1,0);
+	con.lineTo(150,50);
+	con.stroke();
+</script>
+
+<!--Disabled elements -->
+<br>
+<h1> Disabled elements</h1>
+<h3> Button </h3>
+<button type="button">CSE 134B!</button>
+<h3> Select/Option </h3>
+<select>
+  <option value="python">Python</option>
+  <option value="j">Java</option>
+  <option value="c">C++</option>
+  <option value="prolog">Prolog</option>
+</select>
+<h3>Textarea </h3>
+<textarea rows="4" cols="50">
+Insert desired text here.
+</textarea>
+
+<h3> Optgroup </h3>
+<select>
+  <optgroup label="Object Oriented">
+    <option value="j">Java</option>
+    <option value="c">C++</option>
+  </optgroup>
+  <optgroup label="Non-Object Oriented">
+    <option value="cc">C</option>
+    <option value="python">Python</option>
+  </optgroup>
+</select>
+
+<h3> Fieldset </h3>
+<form>
+  <fieldset>
+    <legend>Survey</legend>
+    Name: <input type="text"><br>
+    Favorite color: <input type="text"><br>
+    Favorite animal: <input type="text">
+  </fieldset>
+</form>
+
