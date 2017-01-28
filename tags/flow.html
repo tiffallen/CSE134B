@@ -5,10 +5,302 @@
 
     <body>
         <h1> FLOW CONTENT </h1>
-        <p> Tags to be demonstrated: a abbr address area (if it is a descendant of a map element) article aside audio b bdi bdo 
+        <p> Tags to be demonstrated: a abbr address applet area (if it is a descendant of a map element) article aside audio b bdi bdo 
         blockquote br button canvas cite code data datalist del dfn div dl em embed fieldset figure footer form 
         h1 h2 h3 h4 h5 h6 header hr i iframe img input ins kbd keygen label main map mark math meter nav noscript 
-        object ol output p pre progress q ruby s samp script section select small span strong sub sup svg table template
+        object ol output otpgroup p pre progress q ruby s samp script section select small span strong sub sup svg table template
         textarea time u ul var video wbr text </p>
+        
+        <h3> a</h3>
+            <a href="http://classes.pint.com/cse134b/">CSE 134B course website </a>
+        
+        <h3> abbr </h3>
+            <abbr title="United Nationions International Children Fund">UNICEF</abbr> was founded in 1946.
+        
+        <h3> address </h3>
+            <address>
+                Follow up with us on <a href="http://facebook.com"> Facebook! </a>
+            </address>
+        
+        <h3> applet </h3>
+            <p> applet is not supported in html5</p>
+        
+        <h3> area </h3>
+            <p>Click on the sun</p>
+            <img src="galaxy.png" width="145" height="126" alt="Planets" usemap="#planetmap">
+            <map name="planetmap">
+              <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.png">
+            </map>
+        
+        <h3> article </h3>
+            <article>
+                <h4> Article Title </h4>
+                <p> Article content </p>
+            </article>
+        
+        <h3> aside </h3>
+            <p> I attend UCSD. </p>
+            <aside>
+                <h4> UCSD </h4>
+                UCSD (University of California San Diego) is a public university in La Jolla, San Diego.
+            </aside>
+        
+        <h3> audio </h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mp3">
+          <p>Your browser doesn't support HTML5 audio. Here is a <a href="audio.mp3">link to the audio</a> instead.</p>
+        </audio>
+        
+        <h3> b</h3>
+            <P> This is  <b> bold </b> text </p>
+        
+        <h3> bdi </h3>
+            <p> Username: <bdi> Weirdly_formatted_name </bdi> Score: 90 points </p>
+        
+        <h3> bdo</h3>
+            <p> Right to left </p>
+            <bdo dir='rtl'> Right to left </bdo>
+        
+        <h3> blockquote </h3>
+            <blockquote cite="https://en.wikipedia.org/wiki/St_John%27s_Anglican_Church,_Fremantle">
+                St John's Anglican Church also known as St John the Evangelist Church, is an Anglican church in <br>
+                Fremantle, Western Australia. It was originally opened in 1843, and then replaced with a larger building <br>
+                in 1882. The older building was demolished, which allowed Fremantle Town Hall to be built and for the<br>
+                High Street to be extended, giving the Kings Square its current shape.
+            </blockquote>
+        
+        <h3> br</h3>
+                Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph<br>
+                ...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph<br>
+                ...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph<br>
+                ...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph...Really long paragraph<br>
+                ...Really long paragraph...Really long paragraph...
+        
+        <h3> button </h3>
+            <button type="button">CSE 134B!</button>
+        
+        <h3> canvas  </h3>
+        <h1> Canvas Tag </h1>
+            <canvas id="can" width="300" height="200" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                var a = document.getElementById("can");
+                var con = a.getContext("2d");
+                con.moveTo(1,0);
+                con.lineTo(150,50);
+                con.stroke();
+            </script>
+        
+        <h3> cite </h3>
+            <blockquote cite="https://en.wikipedia.org/wiki/St_John%27s_Anglican_Church,_Fremantle">
+                St John's Anglican Church also known as St John the Evangelist Church, is an Anglican church in <br>
+                Fremantle, Western Australia. It was originally opened in 1843, and then replaced with a larger building <br>
+                in 1882. The older building was demolished, which allowed Fremantle Town Hall to be built and for the<br>
+                High Street to be extended, giving the Kings Square its current shape.
+            </blockquote>
+        
+        <h3> code  </h3>
+            <code> THIS IS CODE </code>
+        
+        <h3> data </h3>
+            <ul>
+              <li><data value="45814">Blouse </data></li>
+              <li><data value="94856">Pants </data></li>
+              <li><data value="42561"> Shoes</data></li>
+            </ul>
+        
+        <h3> datalist</h3>
+            <input list="dog_breeds">
+            <datalist id="dog_breeds">
+              <option value="Husky">
+              <option value="Jack Russel">
+              <option value="Pug">
+              <option value="Chiuahua">
+              <option value="Lab">
+            </datalist>
+        
+        <h3> del </h3>
+            <p> My favorite class is <del> Math </del> English </p>
+        
+        <h3> dfn </h3>
+            <p> <dfn> Dogs </dfn> are man's best friend </p>
+        
+        <h3> div </h3>
+            <div>
+                <p> This section is divided and separated from the others </p>
+            </div>
+        
+        <h3> dl , dd, dt </h3>
+            <dl>
+              <dt>Cappuchino</dt>
+              <dd>6 oz steamed milk and espresso, 6 oz milk foam</dd>
+              <dt>Macchiato</dt>
+              <dd>espresso, one tablespoon of steamed milk, dollop of foam </dd>
+            </dl>
+        
+        <h3> em  </h3>
+            <p> This is <em> EMPHASIZED </em></p>
+            
+        <h3> embed  </h3>
+            <embed src="embed.jpg">
+            
+        <h3> fieldset </h3>
+            <form>
+              <fieldset>
+                <legend>Survey</legend>
+                Name: <input type="text"><br>
+                Favorite color: <input type="text"><br>
+                Favorite animal: <input type="text">
+              </fieldset>
+            </form>
+            
+        <h3> footer </h3>
+            <footer> This site was made by awesome people </footer>
+            
+        <h3> form </h3>
+            <form>
+              First name: <input type="text" name="fname"><br>
+              Last name: <input type="text" name="lname"><br>
+              <input type="submit" value="Submit">
+            </form>
+        
+        <h3> h1 </h3>
+            <h1> THIS IS H1 </h1>
+            
+        <h3> h2 </h3>
+            <h2> THIS IS H2 </h2>
+        
+        <h3> h3 </h3>
+            <h3> THIS IS H3 </h3>
+        
+        <h3> h4</h3>
+            <h4> THIS IS H4 </h4>
+        
+        <h3> h5 </h3>
+            <h5> THIS IS H5 </h5>
+        
+        <h3> h6</h3>
+            <h6> THIS IS H6 </h6>
+        
+        <h3> header </h3>
+        
+        <h3> hr </h3>
+        
+        <h3> i </h3>
+        
+        <h3> iframe </h3>
+            <iframe src="http://www.ucsd.edu">
+              <p>Your browser does not support iframes.</p>
+            </iframe>
+        
+        <h3> img </h3>
+             <img src="embed.jpg" alt="pug" height="42" width="42">
+        
+        <h3> input </h3>
+        
+        <h3> ins</h3>
+        
+        <h3> kbd </h3>
+        
+        <h3> keygen</h3>
+        
+        <h3> label </h3>
+        
+        <h3> main </h3>
+        
+        <h3> map </h3>
+        
+        <h3> mark </h3>
+        
+        <h3> math </h3>
+        
+        <h3> meter </h3>
+        
+        <h3> nav </h3>
+        
+        <h3> noscript</h3>
+        
+        <h3> object  </h3>
+        
+        <h3> ol  </h3>
+        
+        <h3> output</h3>
+        
+        <h3> Optgroup </h3>
+            <select>
+              <optgroup label="Object Oriented">
+                <option value="j">Java</option>
+                <option value="c">C++</option>
+              </optgroup>
+              <optgroup label="Non-Object Oriented">
+                <option value="cc">C</option>
+                <option value="python">Python</option>
+              </optgroup>
+            </select>
+  
+        <h3> p</h3>
+        
+        <h3> pre</h3>
+        
+        <h3> progress </h3>
+        
+        <h3> q </h3>
+        
+        <h3> ruby </h3>
+        
+        <h3> s</h3>
+        
+        <h3> samp </h3>
+        
+        <h3> script </h3>
+        
+        <h3> section </h3>
+        
+        <h3> select </h3>
+            <h3> Select/Option </h3>
+            <select>
+              <option value="python">Python</option>
+              <option value="j">Java</option>
+              <option value="c">C++</option>
+              <option value="prolog">Prolog</option>
+            </select>
+        
+        <h3> small </h3>
+        
+        <h3> span </h3>
+        
+        <h3> strong </h3>
+        
+        <h3> sub </h3>
+        
+        <h3> sup </h3>
+        
+        <h3> svg </h3>
+        
+        <h3> table </h3>
+        
+        <h3> template  </h3>
+        
+        <h3> textarea </h3>
+            <textarea rows="4" cols="50">
+            Insert desired text here.
+            </textarea>
+        
+        <h3> time </h3>
+        
+        <h3> u </h3>
+        
+        <h3> ul </h3>
+        
+        <h3> var </h3>
+        
+        <h3> video </h3>
+        
+        <h3> wbr </h3>
+        
+        <h3> text  </h3>
+
+        
+        
     </body>
 </html>
