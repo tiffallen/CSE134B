@@ -4,36 +4,76 @@
         <title> LOGIN PAGE, SCREEN 1 </title>
         <meta charset="utf-8">
         <meta name="author" content="Josh Chang">
+         <link rel="stylesheet" href="marvel.css">
+         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
     </head>
 
     <body>
         <h1>MARVEL-DEX</h1>
-        <p>Welcome to Marvel-Dex, where you can track all of your favorite Marvel characters in one easy place!</p>
+        <h1>Welcome to Marvel-Dex, where you can track all of your favorite Marvel characters in one easy place!</h1>
+        <div class = "form">
+	        
+	     <div id="login">   
+          <h1>Login!</h1>
+          
+          <form action="home.html">
+          
+            <div class="box-area">
+	            <h5> Username: </h5>
+            <label>
+            </label>
+            <input type="text"required autocomplete="off"/>
+          </div>
+          
+          <div class="box-area">
+               <h5> Password: </h5>
+            <input type="password"required autocomplete="off"/>
+          </div>
+                    
+          <button class="button push-button"/>Log In</button>
+          
+          </form>
 
-        <h3>Login</h3>
-        <label>Username: </label><input type="text" placeholder="Enter username">
-        <br>
-        <label>Password: </label><input type="password" placeholder="Enter password">
-        <br>
-        <form action="home.html">
-            <input type="submit" value="Log in">
-        </form>
+        </div>
 
-        <h3>Sign Up!</h3>
-        <label>Username: </label><input type="text" placeholder="Enter username">
-        <br>
-        <label>Email: </label><input type="email" placeholder="Enter email">
-        <br>
+	    <br>
+	    
+        <div id="signup">   
+          <h1>Sign Up!</h1>
+          
+          <form action="home.html" >
+          
+            <div class="box-area">
+	            <h5> Username: </h5>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
 
-        <label>Password: </label><input type="password" placeholder="Enter password">
-        <br>
+          <div class="box-area">
+	          <h5> Enter Email: </h5>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="box-area">
+	          <h5> Choose Password: </h5>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          
+          <div class="box-area">
+	          <h5> Confirm Password: </h5>
+           
+            <input type="password"required autocomplete="off"/>
+          </div>
 
-        <label>Confirm Password: </label><input type="password" placeholder="Confirm password">
-        <br>
+          <button type="submit" class="button push-button"/>Sign up!</button>
+          
+          </form>
 
-        <form action="home.html">
-            <input type="submit" value="Sign up!" />
-        </form>
+        </div>
+        
+                    
+</div> <!-- /form -->
 
         <hr>
         <h1>Site Map (For testing purposes)</h1>
