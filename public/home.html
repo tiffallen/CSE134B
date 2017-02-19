@@ -4,47 +4,132 @@
         <title> HOME PAGE, SCREEN 2 </title>
         <meta charset="utf-8">
         <meta name="author" content="Josh Chang">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
+
     </head>
 
     <body>
-    	<h1><a href="home.html"> MARVEL-DEX </a></h1>
+        <section>
+        <!--General Top Navigation Bar-->
+        <ul>
+            <li>
+                <h1><a href="home.html"> MARVEL-DEX </a></h1>
+            </li>
 
-    	<!--General Top Navigation Bar-->
-        <form action="login.html">
-        	<input type="submit" value="Logout" />
-    	</form>
 
-        <form action="home.html">
-        	<input type="search" placeholder="Search Marvel-Dex" />
-    	</form>
+            <li>
+                <form action="home.html">
+                    <div class="box-area">
+                        <input type="search" placeholder="Search Marvel-Dex" required autocomplete="off"/>
+                    </div>
+                </form>
+            </li>
 
-        <form action="user_profile.html">
-        	<input type="submit" value="My Profile" />
-    	</form>
+            <li>
+                <form action="user_profile.html">
+                    <input class="button push-button" type="submit" value="My Profile" />
+                </form>
+            </li>
+            <li>
+                <form action="login.html">
+                    <input class="button push-button" type="submit" value="Logout" />
+                </form>
+            </li>
+        </ul>
+        <ul>
+
+        </section>
+
+        <div class="form">
+        <img src="images/marvel_characters_logo.jpeg&h=666" width="300" alt="">
 
     	<!--Character List-->
         <h2>All Characters</h2>
-	    <img src="https://anthonyvecch.files.wordpress.com/2015/07/marvel-logo.jpeg&amp;h=666" width="300" alt="">
-        <ul>
-        	<li>Iron Man</li>
-        	<li>Captain America</li>
-        	<li>Black Widow</li>
-        	<li>Hulk</li>
-        	<li>Hawkeye</li>
-        </ul>
+        	<figure>
+                <a href="character_home.html"><img src="images/ironman_headshot.png" alt=""width=100px height=100px>
+                <figcaption>Iron Man</figcaption></a>
+            </figure>
+
+        	<figure>
+                <a href="character_home.html">
+                    <img src="images/captain_america_icon.png" alt="" width=100px height=100px>
+                    <figcaption>Captain America</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+        	   <a href="character_home.html">
+                    <img src="images/black_widow_icon.jpg" alt="" width=120px height=100px>
+                    <figcaption>Black Widow</figcaption>
+               </a>
+            </figure>
+
+            <figure>
+        	   <a href="character_home.html">
+                    <img src="images/hulk_icon.png" alt="" width=100px height=100px>
+                    <figcaption>Hulk</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+        	   <a href="character_home.html">
+                    <img src="images/hawkeye_icon.png" alt="" width=100 height=100>
+                    <figcaption>Hawkeye</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+               <a href="character_home.html">
+                    <img src="images/nick_fury_icon.png" alt="" width=100px height=100px>
+                    <figcaption>Nick Fury</figcaption>
+                </a>
+            </figure>
 
         <!--Movie List-->
         <h2>All Movies</h2>
-        <img src="https://anthonyvecch.files.wordpress.com/2015/07/marvel-logo.jpeg&amp;h=666" width="300" alt="">
         <ul>
-        	<li>Iron Man</li>
-        	<li>Spiderman</li>
-        	<li>Logan</li>
-        	<li>The Avengers</li>
-        	<li>Captain America: Civil War</li>
+            <figure>
+               <a href="movie_page.html">
+                    <img src="images/iron_man_poster.jpg" alt="" width=100px height=160>
+                    <figcaption>Iron Man</figcaption>
+                </a>
+            </figure>        	
+            <figure>
+               <a href="movie_page.html">
+                    <img src="images/spiderman_poster.jpg" alt="" width=100px height=160>
+                    <figcaption>The Amazing Spiderman</figcaption>
+                </a>
+            </figure>          	
+            <figure>
+               <a href="movie_page.html">
+                    <img src="images/logan_poster.jpg" alt="" width=100px height=160>
+                    <figcaption>Logan</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+               <a href="movie_page.html">
+                    <img src="images/avengers_poster.jpg" alt="" width=100px height=160>
+                    <figcaption>The Avengers</figcaption>
+                </a>
+            </figure>  
+
+            <figure>
+               <a href="movie_page.html">
+                    <img src="images/civil_war_poster.jpg" alt="" width=100px height=160>
+                    <figcaption>Captain America: Civil War</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+               <a href="movie_page.html">
+                    <img src="images/thor_poster.jpeg" alt="" width=100px height=160>
+                    <figcaption>Thor</figcaption>
+                </a>
+            </figure>            
         </ul>
 
-
-
+    </div>
     </body>
 </html>

@@ -23,23 +23,47 @@ a:hover {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
+  min-height: 1200px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  z-index: 1;
 }
 
 h1 {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-weight: 300;
   margin: 0 0 40px;
 }
 
-h5 {
-  font-family: Marvel;
-  color: #ffffff;
-  font-size: 18px;
+h2 {
+  text-align:center;
+  color:#ffffff;
+  font-size:34px;
 }
+
+
+img {
+  display: block;
+  margin:auto;
+}
+
+p {
+  color: #ffffff;
+}
+
+figure {
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
 
 input, textarea {
   font-size: 18px;
@@ -65,6 +89,7 @@ textarea {
   resize: vertical;
 }
 
+/* Nav Bar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -72,7 +97,6 @@ ul {
 }
 
 li {
-  text-align: right;
   display: inline;
 }
 
