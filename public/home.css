@@ -23,11 +23,10 @@ a:hover {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
-  min-height: 1200px;
+  min-height: 1400px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-  z-index: 1;
 }
 
 h1 {
@@ -53,7 +52,7 @@ p {
   color: #ffffff;
 }
 
-figure {
+.figure {
   float: left;
   width: 30%;
   text-align: center;
