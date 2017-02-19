@@ -23,7 +23,7 @@ a:hover {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
-  min-height: 1400px;
+  min-height: 900px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -62,7 +62,23 @@ p {
   border: thin silver solid;
   margin: 0.5em;
   padding: 0.5em;
-  max-width: 100%
+}
+
+.figure .close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 5px 2px 2px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    opacity:.2;
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
 }
 
 

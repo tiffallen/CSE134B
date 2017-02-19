@@ -4,36 +4,49 @@
     	<title> CHARACTER HOME, SCREEN 4 </title>
 		<meta charset="utf-8">
        	<meta name="author" content="Josh Chang">
+       	<link rel="stylesheet" href="movie_page.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
     </head>
 
     <body>
-    	<section>
-        <h1><a href="home.html"> MARVEL-DEX </a></h1>
-    	<!--General Top Navigation Bar-->
-	        <form action="login.html">
-	        	<input type="submit" value="Logout" />
-	    	</form>
+        <section>
+        <!--General Top Navigation Bar-->
+        <ul>
+            <li>
+                <h1><a href="home.html"> MARVEL-DEX </a></h1>
+            </li>
 
-	        <form action="home.html">
-	        	<input type="search" placeholder="Search Marvel-Dex" />
-	    	</form>
+            <li>
+                <form action="home.html">
+                    <div class="box-area">
+                        <input type="search" placeholder="Search Marvel-Dex" required autocomplete="off"/>
+                    </div>
+                </form>
+            </li>
 
-	        <form action="user_profile.html">
-	        	<input type="submit" value="My Profile" />
-	    	</form>
-    	</section>
+            <li>
+                <form action="user_profile.html">
+                    <input class="button push-button" type="submit" value="My Profile" />
+                </form>
+            </li>
+            <li>
+                <form action="login.html">
+                    <input class="button push-button" type="submit" value="Logout" />
+                </form>
+            </li>
+        </ul>
+        </section>
 
     	<!--Movie Info Section-->
-    	<section>
+    	<div class="form">
 	    	<h2>Marvel Movie Name</h2>
-		    <img src="https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg" width="600" alt="">
+		    <img src="https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg" width="500" alt="">
 		    <p>This is a blurb about a Marvel Movie! Lorem ipsum etc....</p>
-	    	<h4>All Characters</h4>
+	    	<h3>All Characters</h3>
 	    	<a href="character_home.html">Character 1</a>
 	    	<p>This is a brief description of Character 1!</p>
 	    	<a href="character_home.html">Character 2</a>
 	    	<p>This is a brief description of Character 2!</p>
-    	</section>
-
+	    </div>
     </body>
 </html>
