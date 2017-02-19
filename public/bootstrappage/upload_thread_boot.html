@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> UPLOAD THREAD, SCREEN 6 </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Josh Chang">   
+        <link rel="stylesheet" href="upload_thread.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
+        <link rel="stylesheet" href="bootstrapcss/bootstrap.css" />
+        <link rel="stylesheet" href="bootstrapcss/bootstrap-theme.min.css" />
+     
+    </head>
+
+    <body>
+    	<section>
+        <h1><a href="home.html">MARVEL-DEX</a></h1>
+    	<!--General Top Navigation Bar-->
+    	
+    		<form action="home.html">
+	        	<input type="search" placeholder="Search Marvel-Dex" />
+	    	</form>
+	    	
+	        <form action="login.html">
+	        	<button class="btn-primary"/>Logout</button>
+	    	</form>
+
+	        <form action="user_profile.html">
+	        	<button class="btn-primary"/>My Profile</button>
+	    	</form>
+    	</section>
+
+    	<!--Submission form-->
+    	<div class = "form">
+    	<section>
+	    	
+    		<h2>Submit Post</h2>
+    		
+    		<form action="character_home.html">
+    			<h5>Post Name: </h5><input type="text" placeholder="Title required "/>
+    			<h5>Image Upload: </h5><input type="file"/>
+    			<h5>Video URL: </h5><input type="url" placeholder="Link"/>
+    			<h5>Text: </h5><input size=100 type="text" placeholder="Text..."/>
+    			<h5>My Rating (1-5): </h5><input type="number" name="Rating" min="1" max="5"/>
+    			<h5>Movie Tag: </h5><input list="movies">
+    				<datalist id="movies">
+    					<option value="The Avengers">
+    					<option value="Iron Man">
+    					<option value="Captain America: Civil War">
+    				</datalist>
+    			<h5>Privacy:</h5>
+    			  <div>
+					<input id="private" type="radio" name="field" value="option"> <br>
+					<label for="private"><h6>Private</h6></label>
+					<input id="public" type="radio" name="field" value="option"> <br>
+					<label for="public"><h6>Public</h6></label>
+			    </div>
+       			<input class = "btn-primary" type="submit" value="Submit post"/>
+    		</form>
+    	</section>
+    	</div>
+
+    </body>
+</html>
