@@ -1,0 +1,104 @@
+Movie JSON
+Name
+Image
+Movie Description
+Character list (linking to character JSON?)
+
+{
+    "all_movies": [
+        {
+            "name" : "Iron Man",
+            "image": "images/iron_man_poster.jpg",
+            "description": "DESCRIPTION ABOUT IRON MAN",
+            "characters":[
+                {
+                    "character_name": "Iron Man"
+                }
+            ]
+        },
+        
+        {
+            "name" : "The Amazing Spiderman",
+            "image": "images/spiderman_poster.jpg",
+            "description": "DESCRIPTION ABOUT SPIDER MAN ",
+            "characters":[
+                {
+                    "character_name": "Spider Man"
+                }
+            ]
+        
+        },
+        
+        {
+            "name" : "The Avengers",
+            "image": "images/avengers_poster.jpg",
+            "description": "DESCRIPTION ABOUT THE AVENGERS",
+            "characters":[
+                {
+                    "character_name": "Iron Man"
+                },
+                {
+                    "character_name": " Captain America"
+                },
+                {
+                    "character_name": "Black Widow"
+                },
+                {
+                    "character_name": "Hulk"
+                },
+                {
+                    "character_name": "Hawkeye"
+                },
+                {
+                    "character_name": "Nick Fury"
+                }
+            ]
+        },
+        
+        {
+            "name" : "Logan",
+            "image": "images/logan_poster.jpg",
+            "description": "DESCRIPTION ABOUT LOGAN",
+            "characters":[
+                {
+                    "character_name": "Wolverine"
+                }
+            ]
+        },
+        
+        {
+            "name" : "Captain America: Civil War",
+            "image": "images/civil_war_poster.jpg,"
+            "description": "DESCRIPTION ABOUT Civil War",
+            "characters":[
+                {
+                    "character_name": "Iron Man"
+                },
+                {
+                    "character_name": " Captain America"
+                },
+                {
+                    "character_name": "Black Widow"
+                },
+                {
+                    "character_name": "Hulk"
+                },
+                {
+                    "character_name": "Hawkeye"
+                }
+            ]
+        },
+        
+        {
+            "name" : "Thor",
+            "image": "images/thor_poster.jpg",
+            "description": "DESCRIPTION ABOUT Thor",
+            "characters":[
+                {
+                    "character_name": "Thor"
+                }
+            ]
+        }
+    
+    ]
+}

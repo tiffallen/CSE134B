@@ -1,0 +1,191 @@
+
+{
+    "all_characters": [
+        {
+            "name": "Iron Man",
+            "img_url": "images/ironman_headshot.png",
+            "long_description": "IRON MAN LONG DESCRIPTION",
+            "short_description": "IRON MAN SHORT DESCRIPTION",
+            "rating": "4",
+            "threads": [
+                {
+                    "title": "Thread 1 about Iron Man ",
+                    "img": "http://vignette4.wikia.nocookie.net/ironman/images/6/62/Mark43.PNG/revision/latest/scale-to-width-down/300?cb=20150603032716&amp;h=666",
+                    "video_url": "video url ",
+                    "text": "MY THOUGHTS ABOUT IRON MAN ",
+                    "my_rating": "3",
+                    "movie_tag": [
+                        {
+                            "movie_title": "Iron Man"
+                        }
+                    ],
+                    "privacy": "Public"
+                }
+            ],
+            "all_movies": [
+                {
+                    "movie_name": "Iron Man"
+                },
+                {
+                    "movie_name": "Captain America: Civil War"
+                },
+                {
+                    "movie_name": "The Avengers"
+                }
+            ]
+        },
+        
+        {
+            "name": "Captain America",
+            "img_url":"images/captain_america_icon.png",
+            "long_description": "CAPTAIN AMERICA LONG DESCRIPTION",
+            "short_description": "CAPTAIN AMERICA SHORT DESCRIPTION",
+            "rating": "4",
+            "threads": [
+                {
+                    "title": "Thread 1 about Captain America",
+                    "img": "images/captain_america_icon.png",
+                    "video_url":"video url",
+                    "text": "MY THOUGHTS ABOUT CAPTAIN AMERICA ",
+                    "my_rating": "4",
+                    "movie_tag": [
+                        {
+                            "movie_title":"The Avengers"
+                        }
+                    ],
+                    "privacy": "Private"
+                }
+            ],
+            "all_movies": [
+                {
+                    "movie_name":"The Avengers"
+                },
+                {
+                    "movie_name":"Captain America: Civil War"
+                }
+            ]
+        },
+        
+        {
+            "name": "Black Widow",
+            "img_url": "images/black_widow_icon.jpg",
+            "long_description": "LONG DESCRIPTION ABOUT BLACK WIDOW",
+            "short_description": "SHORT DESCRIPTION ABOUT BLACK WIDOW",
+            "rating": "3.5",
+            "threads": [
+                {
+                    "title": "Thread 1 about Black Widow",
+                    "img": "images/black_widow_icon.jpg",
+                    "video_url": "video url",
+                    "text": "MY THOUGHTS ON BLACK WIDOW",
+                    "my_rating": "3",
+                    "movie_tag": [
+                        {
+                            "movie_title":"Captain America: Civil War"
+                        }
+                    ],
+                    "privacy": "Private"
+                }
+            ],
+            "all_movies": [
+                {
+                    "movie_name": "Captain America: Civil War"
+                },
+                {
+                    "movie_name":"The Avengers"
+                }
+            ]
+        },
+        
+        {
+            "name": "Hulk",
+            "img_url": "images/hulk_icon.png",
+            "long_description": "LONG DESCRIPTION ABOUT HULK ",
+            "short_description": "SHORT DESCRIPTION ABOUT HULK",
+            "rating": "4.5",
+            "threads": [
+                {
+                    "title": "My thread about the Hulk",
+                    "img": "images/hulk_icon.png",
+                    "video_url":"video url",
+                    "text": "MY THOUGHTS ON THE HULK",
+                    "my_rating": "4",
+                    "movie_tag": [
+                        {
+                            "movie_title": "The Avengers"
+                        }
+                    ],
+                    "privacy": "Public"
+                }
+            ],
+            "all_movies":[
+                {
+                    "movie_name": "Captain America: Civil War"
+                },
+                {
+                    "movie_name": "The Avengers"
+                }
+            ]
+        },
+        
+        {
+            "name": "Hawkeye",
+            "img_url": "images/hawkeye_icon.png",
+            "long_description": "LONG DESCRIPTION ABOUT HAWKEYE",
+            "short_description": "SHORT DESCRIPTION ABOUT HAWKEYE",
+            "rating": "3",
+            "threads": [
+                {
+                    "title": "MY Thread  ON HAWKEYE ",
+                    "img": "images/hawkeye_icon.png",
+                    "video_url": "video url",
+                    "text": "My thoughts on Hawkeye",
+                    "my_rating": "4",
+                    "movie_tag": [
+                        {
+                            "movie_title": "The Avengers"
+                        }
+                    ],
+                    "privacy":"Public"
+                }
+            ],
+            "all_movies": [
+                {
+                    "movie_name": "The Avengers"
+                },
+                {
+                    "movie_name": "Captain America: Civil War"
+                }
+            ]
+        },
+        
+        {
+            "name": "Nick Fury",
+            "img_url": "images/nick_fury_icon.png", 
+            "long_description": "LONG DESCRIPTION ON NICK FURY",
+            "short_description": "SHORT DESCRIPTION ON NICK FURY",
+            "rating": "2",
+            "threads": [
+                {
+                    "title":
+                    "img":
+                    "video_url":
+                    "text":
+                    "my_rating":
+                    "movie_tag": [
+                        {
+                            "movie_title" : "The Avengers"
+                        }
+                    ],
+                    "privacy": "Public"
+                }
+            ],
+            "all_movies":[
+                {
+                    "movie_name": "The Avengers"
+                }
+            ]
+        }
+
+    ]
+}
