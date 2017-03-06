@@ -167,11 +167,11 @@
             "rating": "2",
             "threads": [
                 {
-                    "title":
-                    "img":
-                    "video_url":
-                    "text":
-                    "my_rating":
+                    "title": "MY THOUGHTS ON NICK Fury",
+                    "img": "images/nick_fury_icon.png",
+                    "video_url": "video_url",
+                    "text": "BLAH BLABH",
+                    "my_rating": "4",
                     "movie_tag": [
                         {
                             "movie_title" : "The Avengers"

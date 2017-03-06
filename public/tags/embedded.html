@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title> EMBEDDED CONTENT </title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <h1> EMBEDDED CONTENT </h1>
+        <p> Embedded content is content that imports another resource into the document, or content
+            from another vocabulary that is inserted into the document</p>
+        <p> Tags to be demonstrated: audio, canvas, embed, iframe, img, math, object, svg, video </p>
+        
+        
+        <h3> audio </h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mp3">
+          <p>Your browser doesn't support HTML5 audio. Here is a <a href="audio.mp3">link to the audio</a> instead.</p>
+        </audio>
+        
+        <h3> canvas </h3>
+        <h1> Canvas Tag </h1>
+            <canvas id="can" width="300" height="200" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                var a = document.getElementById("can");
+                var con = a.getContext("2d");
+                con.moveTo(1,0);
+                con.lineTo(150,50);
+                con.stroke();
+            </script>
+        
+        <h3> embed</h3>
+            <embed src="embed.jpg">
+        
+        <h3> iframe</h3>
+            <iframe src="http://www.ucsd.edu">
+            </iframe>
+        
+        <h3> img </h3>
+            <img src="embed.jpg" alt="pug" height="42" width="42">
+            
+        <h3> math</h3>
+            <math>
+                <mi> x </mi>
+             </math>
+        
+        <h3> object </h3>
+            <object width="400" height="400" data="embed.jpg"></object>
+        
+        <h3> svg</h3>
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        
+        <h3> video</h3>
+            <video width="320" height="240" controls>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        
+    </body>
+</html>
