@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> LOGIN PAGE, SCREEN 1 </title>
-        <meta charset="utf-8">
-        <meta name="author" content="Josh Chang">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>CSE 134B demo</title>
          <link rel="stylesheet" href="login.css">
-         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
-    </head>
 
-    <body>
-        <h1>MARVEL-DEX</h1>
-        <h1>Welcome to Marvel-Dex, where you can track all of your favorite Marvel characters in one easy place!</h1>
-        <div class = "form">
-	        
-	     <div id="login">   
-          <h1>Login!</h1>
-          
-          <form action="home.html">
-          
-            <div class="box-area">
-	            <h5> Username: </h5>
-            <label>
-            </label>
-            <input type="text" required autocomplete="off"/>
-          </div>
-          
-          <div class="box-area">
-               <h5> Password: </h5>
-            <input type="password" required autocomplete="off"/>
-          </div>
-                    
-          <button class="button push-button">Log In</button>
-          
-          </form>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+      <script src="https://unpkg.com/vue"></script>
+      <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+      <script src="config.js"></script>
+      <script src="login_demo.js"></script>
+   </head>
+   <body>
+      <div id="app">
+         <header>
+            <table>
+               <tbody>
+                  <tr>
+                     <td id="td1"></td>
+                     <td id="td2"></td>
+                     <td id="td3"></td>
+                     <td id="td4"></td>
+                  </tr>
+               </tbody>
+            </table>
+         </header>
+         <div class="container">
+            <br/>
+            <h1 class="text-center">Marvel Dex</h1>
+            <h3 class="text-center">Welcome to Marvel-Dex, where you can track all of your favorite Marvel characters in one easy place!</h3>
 
-        </div>
-
-	    <br>
-	    <hr>
-        <div id="signup">   
-          <h1>Sign Up!</h1>
-          
-          <form action="home.html" >
-          
-            <div class="box-area">
-	            <h5> Username: </h5>
-              <input type="text" required autocomplete="off" />
+            <br/>
+         </div>
+         <div class="jumbotron">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                     <div class="well">
+                        <form class="form-signin" @submit.prevent="login">
+                           <h2 class="form-signin-heading">Login</h2>
+                           <label for="inputEmail" class="sr-only">Email address</label>
+                           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus v-model="userLogin.email">
+                           <br/>
+                           <label for="inputPassword" class="sr-only">Password</label>
+                           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required v-model="userLogin.password">
+                           <br/>
+                           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                     <div class="well">
+                        <h2 class="form-signin-heading">Social</h2>
+                        <button type="button" class="btn btn-block btn-lg btn-danger" v-on:click="googleAuth">Google</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                     <div class="well">
+                        <form class="form-signin" @submit.prevent="signupUser">
+                           <h2 class="form-signin-heading">Signup</h2>
+                           <label for="inputEmail" class="sr-only">Email address</label>
+                           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus v-model="userSignup.email">
+                           <br/>
+                           <label for="inputPassword" class="sr-only">Password</label>
+                           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required v-model="userSignup.password">
+                           <br/>
+                           <label for="inputPassword" class="sr-only">Confirm Password</label>
+                           <input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" required v-model="userSignup.confirm_password">
+                           <br/>
+                           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
             </div>
-        
-
-          <div class="box-area">
-	          <h5> Enter Email: </h5>
-            <input type="email" required autocomplete="off"/>
-          </div>
-          
-          <div class="box-area">
-	          <h5> Choose Password: </h5>
-            <input type="password" required autocomplete="off"/>
-          </div>
-          
-          
-          <div class="box-area">
-	          <h5> Confirm Password: </h5>
-           
-            <input type="password" required autocomplete="off"/>
-          </div>
-
-          <button type="submit" class="button push-button">Sign up!</button>
-          
-          </form>
-
-        </div>
-        
-                    
-</div> <!-- /form -->
-
-        <hr>
-        <h1>Site Map (For testing purposes)</h1>
-        <a href="login.html">1. Login Page</a>
-        <a href="home.html">2. Home Page</a>
-        <a href="user_profile.html">3. User Profile</a>
-        <a href="movie_page.html">4. Movie Page</a>
-        <a href="character_home.html">5. Character Homepage</a>
-        <a href="discussion.html">6. Character Discussion Page</a>
-        <a href="upload_thread.html">7. Upload Thread</a>
-    </body>
+         </div>
+      </div>
+   </body>
 </html>

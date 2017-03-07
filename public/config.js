@@ -10,4 +10,3 @@ databaseURL: "https://marveldex-c8644.firebaseio.com",
 storageBucket: "marveldex-c8644.appspot.com",
 messagingSenderId: "422461575050"
 };
-firebase.initializeApp(config);
