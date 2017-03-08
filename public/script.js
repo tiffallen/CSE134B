@@ -76,7 +76,7 @@ $(function () {
     $(".btnEdit").bind("click", function () {
         operation = "E";
 
-        selected_index = parseInt($(this).attr("alt").replace("Update", ""));
+        selected_index = parseInt($(this).attr("alt").replace("Edit", ""));
         var per = JSON.parse(tblPersons[selected_index]);
         $("#id").val(per.ID);
         $("#name").val(per.Name);
