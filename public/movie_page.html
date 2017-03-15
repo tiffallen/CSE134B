@@ -6,6 +6,9 @@
        	<meta name="author" content="Josh Chang">
        	<link rel="stylesheet" href="movie_page.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        
+        
     </head>
 
     <body>
@@ -39,14 +42,51 @@
 
     	<!--Movie Info Section-->
     	<div class="form">
-	    	<h2>Marvel Movie Name</h2>
-		    <img src="https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg" width="500" alt="">
-		    <p>This is a blurb about a Marvel Movie! Lorem ipsum etc....</p>
-	    	<h3>All Characters</h3>
-	    	<a href="character_home.html">Character 1</a>
-	    	<p>This is a brief description of Character 1!</p>
-	    	<a href="character_home.html">Character 2</a>
-	    	<p>This is a brief description of Character 2!</p>
-	    </div>
+            <div id = "movie">
+                <!-- <h2>Marvel Movie Name</h2>
+                <img src="https://i.ytimg.com/vi/48fKIXlxaXk/maxresdefault.jpg" width="500" alt="">
+                <p>This is a blurb about a Marvel Movie! Lorem ipsum etc....</p>
+                <h3>All Characters</h3>
+                <a href="character_home.html">Character 1</a>
+                <p>This is a brief description of Character 1!</p>
+                <a href="character_home.html">Character 2</a>
+                <p>This is a brief description of Character 2!</p> -->
+            </div>
+        </div>
+        
+        <script type = "text/javascript"></script>
+        <script>
+            $(function(){
+                $(document).ready(function(){
+                var toAdd2 = "";
+                    $.getJSON('../all_movies.json', function(movie_data){
+                        $.getJSON('../all_characters.json', function(char_data){
+                            $.each(movie_data.all_movies, function(x,y){
+                                var movie = localStorage.getItem("movie");
+                                if(y.id == movie){
+                                    var toAdd = "<h2>" + y.name + " </h2>" + 
+                                    " <img src = " + y.image + " width = 500 >" + 
+                                    " <p> " + y.description + "</p> " + "<h3> All Characters </h3>"; 
+                                    console.log("Num of characters: " + y.characters.length);
+                                    $(toAdd).appendTo("#movie");
+                                    for(var x = 0; x < y.characters.length; x++){
+                                        $.each(char_data.all_characters, function(x1, y1){
+                                            if(y.characters[x].character_name == y1.id){
+                                                var toAdd3 = "<a href = 'character_home.html'>" + y1.name + "</a> <br>" + "<p> " + y1.short_description + " </p>";
+                                                $(toAdd3).appendTo("#movie");
+                                            }
+                                        });
+                                    }
+                                    
+                                }
+                                
+                                
+                            });
+                        });
+                    });
+                });
+            });
+        </script>
+        
     </body>
 </html>

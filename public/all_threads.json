@@ -1,0 +1,27 @@
+{
+    "all_threads": [
+        {
+            "user_name" : "tiffallen723@gmail.com",
+            "character_name": "Iron Man",
+            "title": "My Thoughts on Iron Man",
+            "img": "http://vignette4.wikia.nocookie.net/ironman/images/6/62/Mark43.PNG/revision/latest/scale-to-width-down/300?cb=20150603032716&amp;h=666",
+            "video_url": "video url ",
+            "text": "MY THOUGHTS ABOUT IRON MAN ",
+            "privacy": "Public",
+            "my_rating": "3",
+            "movie": [
+                {
+                    "movie_title": "Iron Man"
+                }
+            ]
+            "replies" : [
+                {
+                    "reply": "BLAH BLAH BLAH",
+                    "user_name": "BLAH"
+                }
+            ]
+        }
+    
+    
+    ]
+}
