@@ -57,6 +57,8 @@ window.addEventListener('load', function() {
 
             login: function() {
                 var self = this;
+                var userId = this.userLogin.email;
+                console.log("Normal email: " + userId);
                 firebase.auth().signInWithEmailAndPassword(this.userLogin.email, this.userLogin.password).catch(function(error) {
                     self.processError(error);
                 });
@@ -68,6 +70,8 @@ window.addEventListener('load', function() {
                 provider.addScope('https://www.googleapis.com/auth/plus.login');
                 firebase.auth().signInWithPopup(provider).then(function(result) {
                     var user = result.user;
+                    var userId = result.user.email;
+                    console.log("Google email: " + userId);
                     window.location.href = '/home.html';
                 }).catch(function(error) {
                     alert(error);
