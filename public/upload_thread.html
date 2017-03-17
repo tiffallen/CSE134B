@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script type = "script/script.js"> </script>
+	<script type="text/javascript" src="upload.js"></script>
 
 
 </head>
@@ -38,19 +38,16 @@
 
 		<h2>Submit Post</h2>
 
-		<form action="character_home.html">
-			<h5>Post Name: </h5><input type="text" placeholder="Title required " name="Title"/>
-			<h5> Character Name: </h5> <input type="text" placeholder="Name required" name="character" />
-			<h5>Image Upload: </h5><input type="file" name = "img_url"/>
-			<h5>Video URL: </h5><input type="url" placeholder="Link" name = "video_url"/>
-			<h5>Text: </h5><input size=100 type="text" placeholder="Text..." name = "text"/>
-			<h5>My Rating (1-5): </h5><input type="number" name="Rating" min="1" max="5"/>
-			<h5>Movie Tag: </h5><input list="movies" name = "movies">
-			<datalist id="movies">
-				<option value="The Avengers">
-				<option value="Iron Man">
-				<option value="Captain America: Civil War">
-			</datalist>
+		<form action="discussion.html" id = "threads">
+
+			<h5>Post Name: </h5><input type="text" id = "pn" placeholder="Title required " name="Title"/>
+			<h5> Character Name: </h5> <input type="text" id = "char" placeholder="Name required" name="character" />
+			<h5>Image Upload: </h5><input type="file" id="iu" name = "img_url" onchange="previewFile()"/>
+			<img src="" height="200" alt="Image preview...">
+			<h5>Video URL: </h5><input type="url" id = "vu" placeholder="Link" name = "video_url"/>
+			<h5>Text: </h5><input size=100 type="text" id ="desc" placeholder="Text..." name = "text"/>
+			<h5>My Rating (1-5): </h5><input type="number" id = "rating" name="Rating" min="1" max="5"/>
+			<h5>Movie Tag: </h5> <input size=100 type="text" id ="movieName" name = "mov"/>
 			<h5>Privacy:</h5>
 			<div>
 				<input id="private" type="radio" name="field" value="option"> <br>
@@ -58,7 +55,7 @@
 				<input id="public" type="radio" name="field" value="option"> <br>
 				<label for="public"><h4>Public</h4></label>
 			</div>
-			<input class = "button push-button" type="submit" value="Submit post" onclick = "addThread()"/>
+			<input class = "button push-button" type="submit" value="Submit post" />
 		</form>
 
 
@@ -66,6 +63,27 @@
 
 	</section>
 </div>
+<script>
+    function previewFile() {
+        var preview = document.querySelector('img');
+        var file    = document.querySelector('input[type=file]').files[0];
+        var reader  = new FileReader();
+
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+        }
+    }
+</script>
+<div >
+	<table id="postList" ></table>
+</div>
+
 
 </body>
 </html>

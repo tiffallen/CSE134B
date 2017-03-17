@@ -58,7 +58,6 @@
         <script>
             $(function(){
                 $(document).ready(function(){
-                var toAdd2 = "";
                     $.getJSON('../all_movies.json', function(movie_data){
                         $.getJSON('../all_characters.json', function(char_data){
                             $.each(movie_data.all_movies, function(x,y){
@@ -72,8 +71,13 @@
                                     for(var x = 0; x < y.characters.length; x++){
                                         $.each(char_data.all_characters, function(x1, y1){
                                             if(y.characters[x].character_name == y1.id){
-                                                var toAdd3 = "<a href = 'character_home.html'>" + y1.name + "</a> <br>" + "<p> " + y1.short_description + " </p>";
+                                                var toAdd3 = "<a  id = " + y1.id + " href = 'character_home.html'>" + y1.name + "</a> <br>" + "<p> " + y1.short_description + " </p>";
+                                                
                                                 $(toAdd3).appendTo("#movie");
+                                                $('a[id=' + y1.id + ']').click(function(event){
+                                                    localStorage.setItem("character", y1.id);
+                                                    console.log("Clicked on: " + y1.id);
+                                                });
                                             }
                                         });
                                     }

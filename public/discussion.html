@@ -6,8 +6,10 @@
         <meta name="author" content="Josh Chang">
         <link rel="stylesheet" href="discussion.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
+		<script type="text/javascript" src="upload.js"></script>
 
-    </head>
+
+	</head>
 
     <body>
     	<section>
@@ -41,7 +43,30 @@
 	        	<input class = "button push-button" type="submit" value="Reply" />
 	    	</form>
 	    	</div>
+
+
     	</section>
 
+		<section>
+		<div id = "posts" class = "form" >
+
+		</div>
+	   <script>
+		   var text = "";
+		   var i;
+		   for( i = 0 ; i < JSON.parse(localStorage.getItem("tblPersons")).length; i++){
+
+		      text += "<h2>" + JSON.parse(localStorage.getItem("tblPersons"))[i]+ "</h2>" + "<br>"
+
+		  }
+
+		  document.getElementById("posts").innerHTML = text;
+
+
+	   </script>
+			<form action="upload_thread.html">
+				<input class = "button push-button" type="submit" value="Edit Create Threads" />
+			</form>
+		</section>
     </body>
 </html>
