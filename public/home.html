@@ -65,13 +65,13 @@
         <h2>All Characters</h2>
             <div id = "all_characters">
             </div>
-
+        
         <!--Movie List-->
         
         <h2>All Movies</h2>
             <div id="all_movies">
             </div>
-    </div>
+        </div>
 
 
 
@@ -91,16 +91,7 @@
                 $.getJSON('../all_characters.json', function(data){
                     console.log("IN character JSON"); 
                     $.each(data.all_characters, function(x,y){
-                        <!-- if(y.name == "Spider Man"){ -->
-                            <!-- console.log("IF STATEMENT WORKED"); -->
-                        <!-- } -->
-                        <!-- y.id = 0; -->
-                        var toAdd = "<div class = 'figure'> " + "<a href = 'character_home.html'>" + "<img src= " + y.img_url + " width = 100 height = 100>" + " <p> " + y.name + "</p> </a> </div>";
-                        
-                        <!-- $('a').click(function(event){ -->
-                            <!-- console.log("clicked on character"); -->
-                        <!-- }); -->
-                        
+                        var toAdd = "<div class = 'figure'> " + "<a href = 'character_home.html'>" + "<img src= " + y.img_url + " width = 100 height = 100>" + " <p> " + y.name + "</p> </a> </div>";                        
                         $(toAdd).appendTo("#all_characters");
                     });
                 });
@@ -111,21 +102,13 @@
         $(function() {
             $(document).ready(function(){
                 <!-- all movies -->
-                console.log("in movies");
                 $.getJSON('../all_movies.json', function(data){
-                    console.log("IN movie JSON"); 
                     $.each(data.all_movies, function(x,y){
-                        y.selected = 0;
-                        console.log("Movie:  " + y.name + " selected: " + y.selected);
                         var toAdd2 = "<div class = 'figure'> " + "<a id = " + y.id + " href = 'movie_page.html'>" + "<img src= " + y.image + " width = 100 height = 100>" + " <p> " + y.name + "</p> </a> </div>";
                         
                         $(toAdd2).appendTo("#all_movies");
                         
                         $('a[id=' + y.id + ']').click(function(event){
-                            console.log("clicked on " + y.name);
-                            console.log("Movie:  " + y.name + " selected: " + y.selected);
-                            console.log("before set Item");
-                            
                             localStorage.setItem("movie", y.id);
                         });
                     });
