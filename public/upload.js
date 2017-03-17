@@ -54,7 +54,7 @@ $(function () {
 
     function Read() {
         $("#postList").html("");
-        $("#postList").html(
+        /* $("#postList").html(
             "<thead>" +
             "<tr>" +
             "<th><h2>Post Name</h2></th>" +
@@ -69,20 +69,32 @@ $(function () {
             "</thead>" +
             "<tbody>" +
             "</tbody>"
+        ); */
+        $("#postList").html(
+            "<thead>" +
+            "<tr>" + 
+            "<th> <h2 style='text-align:center'> My Posts to Edit or Delete:</h2> </th>" +
+            "</tr> </thead> <tbody> </tbody>"
+        
         );
         for (var i in tblPersons) {
             var pos = JSON.parse(tblPersons[i]);
+            // $("#postList tbody").append("<tr>" +
+                // "<td><h2>"  + pos.PostName +  "</h2></td>" +
+                // "<td><h2>"  + pos.Character +  "</h2></td>" +
+                // "<td><h2>"  + pos.Image +  "</h2></td>" +
+                // "<td><h2>"   + pos.Video +  "</h2></td>" +
+                // "<td><h2>"   + pos.Text+  "</h2></td>" +
+                // "<td><h2>"   + pos.Movie +  "</h2></td>" +
+                // "<td><h2>"   + pos.Rating +  "</h2></td>" +
+                // "<td><img src='images/edit.png' alt='Edit" + i + "' width='20' height='20' class='btnEdit'/> <img src='images/delete.png' width='20' height='20' alt='Delete" + i + "' class='btnDelete'/></td>" +
+                // "</tr>"
+            // );
             $("#postList tbody").append("<tr>" +
-                "<td><h2>"  + pos.PostName +  "</h2></td>" +
-                "<td><h2>"  + pos.Character +  "</h2></td>" +
-                "<td><h2>"  + pos.Image +  "</h2></td>" +
-                "<td><h2>"   + pos.Video +  "</h2></td>" +
-                "<td><h2>"   + pos.Text+  "</h2></td>" +
-                "<td><h2>"   + pos.Movie +  "</h2></td>" +
-                "<td><h2>"   + pos.Rating +  "</h2></td>" +
-                "<td><img src='images/edit.png' alt='Edit" + i + "' width='20' height='20' class='btnEdit'/> <img src='images/delete.png' width='20' height='20' alt='Delete" + i + "' class='btnDelete'/></td>" +
-                "</tr>"
-            );
+                "<td><h2>" + pos.PostName + " </h2></td>" +
+                    "<td><img src='images/edit.png' alt='Edit" + i + "' width='20' height='20' class='btnEdit'/> <img src='images/delete.png' width='20' height='20' alt='Delete" + i + "' class='btnDelete'/></td>" +
+                 "</tr>"                
+             );
         }
 
     }

@@ -55,9 +55,51 @@
 	   <script>
 		   var text = "";
 		   var i;
+           var temp;
+           var start;
+           var end;
 		   for( i = 0 ; i < JSON.parse(localStorage.getItem("tblPersons")).length; i++){
-
-		      text += "<h2>" + JSON.parse(localStorage.getItem("tblPersons"))[i]+ "</h2>" + "<br>"
+                temp = JSON.parse(localStorage.getItem("tblPersons"))[i];
+                start = temp.indexOf("PostName") + 11;
+                end = temp.indexOf("Character") - 3;
+                var post_name = temp.slice(start,end);
+		      <!-- text += "<h2>" + JSON.parse(localStorage.getItem("tblPersons"))[i]+ " NEXT </h2> " " -->
+                text += "<h2> " + post_name + " </h2>" 
+                
+                start = temp.indexOf("Character") + 12;
+                end = temp.indexOf("Image") - 3;
+                var char_name = temp.slice(start, end);
+                text += "<h5> Character Name: " + char_name + "</h5>"
+                
+                start = temp.indexOf("Movie") + 8;
+                end = temp.indexOf("]") - 1;
+                var movie_name = temp.slice(start, end);
+                text += "<h5> Movie Title: " +  movie_name + " </h5>"
+                
+                start = temp.indexOf("Rating") + 9;
+                end = temp.indexOf("Movie") - 3;
+                var my_rating = temp.slice(start, end);
+                text += "<h5> My Rating: " + my_rating + "</h5> "
+                
+                start = temp.indexOf("Image") + 8;
+                end = temp.indexOf("Video") - 3;
+                var img = temp.slice(start,end);
+                if(img.length > 0) {
+                console.log("Image length is greater than zero");
+                    text += "<h5> Image: </h5> <img src= " + img + " width = 300>" 
+                    
+                }
+                start = temp.indexOf("Video") + 8;
+                end = temp.indexOf("Text") - 3;
+                if(temp.slice(start, end).kength > 0) {
+                    temp += "<video width = 300> <source src= " + temp.slice(start, end) + "> </video>" 
+                }
+                
+                start = temp.indexOf("Text") + 7;
+                end = temp.indexOf("Rating") - 3;
+                var my_text = temp.slice(start, end);
+                text += "<h5> My Thoughts: " + my_text + " </h5> "
+                
 
 		  }
 
