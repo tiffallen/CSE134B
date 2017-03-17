@@ -1,0 +1,13 @@
+{
+    "my_characters": [
+        {
+            "character" : "black_widow"
+        },
+        {
+            "character" : "iron_man"
+        },
+        {
+            "character" : "hulk"
+        }
+    ]
+}

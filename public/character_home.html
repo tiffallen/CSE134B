@@ -59,13 +59,13 @@
                 </form>
                 <br>
                 <form action="user_profile.html">
-                    <input class="button push-button" type="submit" value="Follow Character" />
+                    <input class="button push-button" type="submit" value="Follow Character" onclick=follow() />
                 </form>
 
             </div>
 	    <hr>
 
-	    	<h3>Discussion Threads</h3>
+	    	<h3> <a href = "discussion.html"> Discussion Threads </a></h3>
 
             <div id = "discussion">
 	    	<!-- <h4><a href="discussion.html">Discussion 1</a></h4> -->
@@ -84,47 +84,50 @@
     
     <script type = "text/javascript"> </script>
     <script>
-        $(function() {
-            var avg = 0;
-            var count = 0;
-            console.log("before threads json");
-            $.getJSON('../all_threads.json', function(threads){
-                    console.log("In threads json");
-                    $.each(threads.all_threads, function (x,y){
-                        if(y.char_id = localStorage.getItem("character")){
-                            count = count + 1;
-                            avg = avg + y.my_rating;
-                            var toAdd = "<h4> <a id = " + y.thread_id + " href = 'discussion.html' " + y.title + " </a> </h4>"
-                            $(toAdd).appendTo("#discussion");
-                            console.log("y.char_id: " + y.char_id);
-                            $('a[id=' + y.thread_id + ']').click(function(event){
-                                localStorage.setItem("thread", y.thread_id);
-                            });
-                        }
-                    
+        $(document).ready(function() {
+            $(function() {
+                var avg = 0;
+                var count = 0;
+                console.log("before threads json");
+                $.getJSON('../all_threads.json', function(threads){
+                        console.log("In threads json");
+                        $.each(threads.all_threads, function (x,y){
+                            if(y.char_id = localStorage.getItem("character")){
+                                count = count + 1;
+                                avg = avg + y.my_rating;
+                                var toAdd = "<h4> <a id = " + y.thread_id + " href = 'discussion.html' " + y.title + " </a> </h4>"
+                                $(toAdd).appendTo("#discussion");
+                                console.log("y.char_id: " + y.char_id);
+                                $('a[id=' + y.thread_id + ']').click(function(event){
+                                    localStorage.setItem("thread", y.thread_id);
+                                });
+                            }
+                        
+                        });
                     });
-                });
-            
-            $(document).ready(function(){
-                //console.log("before threads json");
-                
-                $.getJSON('../all_characters.json', function(all_char){
-                    $.each(all_char.all_characters, function(x,y){
-                        var character = localStorage.getItem("character");
-                        if(y.id == character){
-                            var toAdd = "<h2> " + y.name + " </h2> " + " <img src = " + y.img_url + " width = 300>" + 
-                                "<p> " + y.long_description + " </p> " + "<p> Overall Rating: " + avg/count + "</p>";
-                            $(toAdd).appendTo("#char");
-                            
-                            
-                        }
-                    });
-                });
-
+                    $.getJSON('../all_characters.json', function(all_char){
+                        $.each(all_char.all_characters, function(x,y){
+                            var character = localStorage.getItem("character");
+                            if(y.id == character){
+                                var toAdd = "<h2> " + y.name + " </h2> " + " <img src = " + y.img_url + " width = 300>" + 
+                                    "<p> " + y.long_description + " </p> ";
+                                $(toAdd).appendTo("#char");
+                            }
+                        });
+                    });   
             });
         });
         
+         function follow(){
+            console.log("IN FOLLOW FUNCTION");
+            $.getJSON('../my_characters.json', function(all_char){
+                all_char.my_characters.push({character: localStorage.getItem("character")});
+                console.log("Character to Follow: " + localStorage.getItem("character"));
+                console.log("END OF JSON");
+            });
+        }
     </script>
+
 
     </body>
 </html>

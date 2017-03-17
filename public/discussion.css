@@ -33,10 +33,13 @@ h1 {
   color: #ffffff;
   font-weight: 300;
   margin: 0 0 40px;
+  font-family: Marvel;
+  font-size: 30px;
 }
 
 h2{font-family: Marvel;
   color: #ffffff;
+  text-align:center;
 }
 
 h4{font-family: Marvel;

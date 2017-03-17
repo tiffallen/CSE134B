@@ -93,8 +93,14 @@
                 $.getJSON('../all_characters.json', function(data){
                     console.log("IN character JSON"); 
                     $.each(data.all_characters, function(x,y){
-                        var toAdd = "<div class = 'figure'> " + "<a href = 'character_home.html'>" + "<img src= " + y.img_url + " width = 100 height = 100>" + " <p> " + y.name + "</p> </a> </div>";                        
+                        var toAdd = "<div class = 'figure'> " + "<a id= " + y.id + " href = 'character_home.html'>" + "<img src= " + y.img_url + " width = 100 height = 100>" + " <p> " + y.name + "</p> </a> </div>";                        
                         $(toAdd).appendTo("#all_characters");
+                        
+                        $('a[id=' + y.id + ']').click(function(event){
+                            localStorage.setItem("character", y.id);
+                            console.log("Current Character: " + localStorage.getItem("character"));
+                        });
+                        
                     });
                 });
                 
