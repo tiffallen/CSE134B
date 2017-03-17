@@ -6,12 +6,14 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/images/avengers_cover.jpg'
+        '/images/vision-sad-offline.gif'
       ]);
     })
   );
 });
 
+
+// retrieving from caches needs polish!
 this.addEventListener('fetch', event => {
   // request.mode = navigate isn't supported in all browsers
   // so include a check for Accept: text/html header.
@@ -20,7 +22,9 @@ this.addEventListener('fetch', event => {
           fetch(event.request.url).catch(error => {
               // Return the offline page
               console.log('Using cache');
-              return caches.match(offlineUrl);
+              // return caches.match(offlineUrl);
+              // return new Response("Network error! Please check your connections!");
+              return caches.match('images/vision-sad-offline.gif');
           })
     );
   }
