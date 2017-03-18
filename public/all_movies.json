@@ -4,7 +4,7 @@
             "id" : "iron_man",
             "name" : "Iron Man",
             "image": "images/iron_man_poster.jpg",
-            "description": "DESCRIPTION ABOUT IRON MAN",
+            "description": "This is the story of how, after being kidnapped by terrorists to build a weapon, billionaire Tony Stark builds a weaponized suit of armor to fight evil and protect the innocent",
             "characters":[
                 {
                     "character_name": "iron_man"
@@ -16,7 +16,7 @@
             "id" : "spiderman",
             "name" : "The Amazing Spiderman",
             "image": "images/spiderman_poster.jpg",
-            "description": "DESCRIPTION ABOUT SPIDER MAN ",
+            "description": "This is the story of Peter Parker, a regular, scrawny teenager who is bitten by a radioactive spider. The bite gives him spider senses and powers, enabling him to fight evil. ",
             "characters":[
                 {
                     "character_name": "spider_man"
@@ -29,7 +29,7 @@
             "id" : "the_avengers",
             "name" : "The Avengers",
             "image": "images/avengers_poster.jpg",
-            "description": "DESCRIPTION ABOUT THE AVENGERS",
+            "description": "Faced with Asgardian thread Loki, the Avengers must band together to defend the world",
             "characters":[
                 {
                     "character_name": "iron_man"
@@ -56,7 +56,7 @@
             "id" : "logan",
             "name" : "Logan",
             "image": "images/logan_poster.jpg",
-            "description": "DESCRIPTION ABOUT LOGAN",
+            "description": "Logan, commonly known as Wolverine, adopts a young girl who has his same supernatural abilities. This film follows them as the government wants to take her.",
             "characters":[
                 {
                     "character_name": "wolverine"
@@ -68,7 +68,7 @@
             "id" : "captain_america_civil_war",
             "name" : "Captain America: Civil War",
             "image": "images/civil_war_poster.jpg",
-            "description": "DESCRIPTION ABOUT Civil War",
+            "description": "Captain America is faced with a difficult choice when his old friend Buckey fights the Avengers.",
             "characters":[
                 {
                     "character_name": "iron_man"
@@ -92,7 +92,7 @@
             "id" : "thor",
             "name" : "Thor",
             "image": "images/thor_poster.jpg",
-            "description": "DESCRIPTION ABOUT Thor",
+            "description": "This story follows the birth story and it's corresponding consequences of Asgardiean Thor and his brother Loki",
             "characters":[
                 {
                     "character_name": "thor"

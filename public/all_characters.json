@@ -5,8 +5,8 @@
             "id": "iron_man",
             "name": "Iron Man",
             "img_url": "images/ironman_headshot.png",
-            "long_description": "IRON MAN LONG DESCRIPTION",
-            "short_description": "IRON MAN SHORT DESCRIPTION",
+            "long_description": "After being held captive by terrorists, billionaire engineer Tony Stark builds a weaponized suit of armor to fight evil",
+            "short_description": "Billionaire Tony Stark who builds a suit of armour to fight the bad guys",
             "rating": "4",
             "privacy": "Public",
             "all_movies": [
@@ -26,8 +26,8 @@
             "id": "captain_america",
             "name": "Captain America",
             "img_url":"images/captain_america_icon.png",
-            "long_description": "CAPTAIN AMERICA LONG DESCRIPTION",
-            "short_description": "CAPTAIN AMERICA SHORT DESCRIPTION",
+            "long_description": "Steve Rogers is a man who was enhanced by an experimental serum by the US Government during WW2. Towards the end of the war, he was trapped in ice and survived in suspended animation until he was revived present day. He is a leader in the Avengers.",
+            "short_description": "Steve Rogers, enhanced to human perfection, serves his country",
             "rating": "4",
             "all_movies": [
                 {
@@ -43,8 +43,8 @@
             "id": "black_widow",
             "name": "Black Widow",
             "img_url": "images/black_widow_icon.jpg",
-            "long_description": "LONG DESCRIPTION ABOUT BLACK WIDOW",
-            "short_description": "SHORT DESCRIPTION ABOUT BLACK WIDOW",
+            "long_description": "Black widow is a baller spy that began her training in Soviet Russia. She became a ballerina to cover her true identity. Ulitmately, she breaks her ties with Russia when they try to brain wash her and she becomes a part of the Avengers. ",
+            "short_description": "Black Widow began is a baller spy",
             "rating": "3.5",
             "all_movies": [
                 {
@@ -60,8 +60,8 @@
             "id": "hulk",
             "name": "Hulk",
             "img_url": "images/hulk_icon.png",
-            "long_description": "LONG DESCRIPTION ABOUT HULK ",
-            "short_description": "SHORT DESCRIPTION ABOUT HULK",
+            "long_description": "Bruce Banner is a physicist who was exposed accidentally to gamma radiation during the detonation of an experimental bomb. As a result, he changes into the Incredible Hulk (huge, green and strong), when under emotional stress. His powers and strength capabilities are proportional to his emotional stress.",
+            "short_description": "Bruce Banner is both a physically weak physicist, and the incredible hulk",
             "rating": "4.5",
             "all_movies":[
                 {
@@ -77,8 +77,8 @@
             "id": "hawkeye",
             "name": "Hawkeye",
             "img_url": "images/hawkeye_icon.png",
-            "long_description": "LONG DESCRIPTION ABOUT HAWKEYE",
-            "short_description": "SHORT DESCRIPTION ABOUT HAWKEYE",
+            "long_description": "Hawkeye began as a reluctant villian until he joined the Ranks of the Avengers as their beloved archer.",
+            "short_description": "Hawkeye is an archer who began as a villian, but became a hero in the Avengers",
             "rating": "3",
             "all_movies": [
                 {
@@ -94,8 +94,8 @@
             "id": "nick_fury",
             "name": "Nick Fury",
             "img_url": "images/nick_fury_icon.png", 
-            "long_description": "LONG DESCRIPTION ON NICK FURY",
-            "short_description": "SHORT DESCRIPTION ON NICK FURY",
+            "long_description": "Nick Fury made an impact in WW2 as the commander of the Howling Commandos. When the war ended he joined the CIA",
+            "short_description": "Nick Fury is the hero of early WW2",
             "rating": "2",
             "all_movies":[
                 {
